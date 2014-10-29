@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Monstro Verde</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <form action="http://terrivel.herokuapp.com/monster" method="post">
+            <fieldset>
+                <legend>Informações básicas</legend>
+                <div id="basico">
+                    <label>Nome:
+                        <input id="texto1" name="nome" type="text">
+                    </label>
+                    <br>
+
+                    <label>Número de Pedras:
+                        <input id="texto2"name="num_pedras" type="number" min="0">
+                    </label>
+                    <br>
+                    <label>Tamanho de Pedras:
+                        <input id="texto3" name="tam_pedras" type="number" step="0.5" min="1" max="7">
+                    </label>
+                    <br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações Adicionais</legend>
+                <div id="adicional">
+                    <div class="linha">
+                        <label class="coluna">Cor do Ceu 1:
+                            <input class="coluna" name="corCeu1" type="color">
+                        </label>
+                    </div>
+                    <div class="linha">
+                        <label class="coluna">Cor do Ceu 2:
+                            <input class="coluna"coluna name="corCeu2" type="color">
+                        </label>
+                    </div>
+
+                    <div class="linha">
+                        <label class="coluna" for="tipo_pedras">Tipo de Pedreas:</label>
+                        <select  name="tipo_pedras" class="coluna" id="tipoPedras">
+                            <option value="marroada">Marroada</option>
+                            <option value="ametista" selected="">Ametista</option>
+                            <option value="topazio" selected="">Topazio</option>
+                            <option value="espinela" selected="">Espinela</option>
+                        </select>
+                    </div>
+                    <label for="tipo_pedras_sortidas">Tipo de Pedreas Sortidas:</label>
+                    <input name="tipo_pedras_sortidas" type="radio" value="Sim">Sim
+                    <input name="tipo_pedras_sortidas" type="radio" value="Não">Não
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                </body>
+                </html>

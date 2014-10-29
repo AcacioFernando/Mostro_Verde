@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/10/2014, 11:20:35
+    Author     : Acacio
+*/
+
+#basico{
+    display: table;    
+}
+#adicional{
+    display: table;
+}
+#basico label{
+    display: table-row;
+}
+fieldset{
+    width: 500px;
+}
+button{
+    width: 100px;
+}
+#texto1{
+    /* padding-left: 125px; */
+    
+    margin-left: 95px;
+    width: 300px;
+}
+#texto2{
+    /* padding-left: 50px; */
+    margin-left: 16px;
+}
+#texto3{
+    /* padding-left: 50px; */  
+    margin-left: 8px;
+}
+#tipoPedras{
+    /* display: block; */
+    width: 150px;
+    margin-left: -93px;
+}
+
+.coluna{
+    display: table-cell;
+}
+.linha{
+    display: table-row;
+}
+
